@@ -7,6 +7,8 @@ const Navbar= () =>{
     }
     return (
     <div>
+        <button onClick={()=>router("/profile")}>Profile</button>
+        <button onClick={()=>router("/")}>Home</button>
         <button onClick={()=>router("/register")}>Register</button>
         <button onClick={redirecttoLogin}>Login</button>       
     </div>
