@@ -10,8 +10,13 @@ import UseState from "./pages/use-state";
 import UseEffect from "./pages/use-effect";
 import UseParams from "./pages/use-params";
 import Product from './pages/product';
+import { useState } from 'react';
+import StyledComponent from './pages/StyledComponent';
+import CreatFruit from './pages/CreateFruit';
+import Greeting from './pages/Greeting';
 
 function App() {
+  const [users,setUsers]=useState(["Dhoni","Rohit","Virat"])
   return(
     <div>
       {/* <Home/> */}
@@ -24,7 +29,10 @@ function App() {
         <Route path="/use-state" element={<UseState/>}/>
         <Route path="/use-effect" element={<UseEffect/>}/>
         <Route path="/use-params" element={<UseParams/>}/>
-        <Route path="/product/:productID" element={<Product/>}/>              
+        <Route path="/product/:productID" element={<Product users={users} setUsers={setUsers}/>}/>    
+          <Route path="/styled-component" element={<StyledComponent/>}/>        
+           <Route path="/create-fruit" element={<CreatFruit/>}/>
+           <Route path="/greeting" element={<Greeting name="Awdiz" isLoggedIn={false}/>}/>
       </Routes>
     </div>
   );
