@@ -14,7 +14,7 @@ import { useState } from 'react';
 import StyledComponent from './pages/StyledComponent';
 import CreatFruit from './pages/CreateFruit';
 import Greeting from './pages/Greeting';
-
+import TooDoList from './pages/TooDoList';
 function App() {
   const [users,setUsers]=useState(["Dhoni","Rohit","Virat"])
   return(
@@ -33,6 +33,7 @@ function App() {
           <Route path="/styled-component" element={<StyledComponent/>}/>        
            <Route path="/create-fruit" element={<CreatFruit/>}/>
            <Route path="/greeting" element={<Greeting name="Awdiz" isLoggedIn={false}/>}/>
+             <Route path="To-do-List" element={<TooDoList/>}/>
       </Routes>
     </div>
   );
