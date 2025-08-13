@@ -6,11 +6,15 @@ const Navbar= () =>{
         router("/login");
     }
     return (
-    <div>
+    <div style={{display :"flex",justifyContent:"center"}}>
         <button onClick={()=>router("/profile")}>Profile</button>
         <button onClick={()=>router("/")}>Home</button>
         <button onClick={()=>router("/register")}>Register</button>
-        <button onClick={redirecttoLogin}>Login</button>       
+        <button onClick={redirecttoLogin}>Login</button>
+         <button onClick={()=>router("/Cart")}>MyCart</button>
+         <button onClick={()=>router("/FakeStore")}>Store</button>
+        
+               
     </div>
     );
 };

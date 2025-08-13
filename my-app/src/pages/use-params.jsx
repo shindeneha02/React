@@ -35,14 +35,11 @@ const UseParams=()=>{
             image: "https://azureprints.com/wp-content/uploads/2024/08/sipper-1.png"
         },
     ]);
+    const parentstyling={display:"flex",justyfycontent:"space-around"}
     console.log(tshirt,"tshirt");
     return (
         
-        <div style={{ 
-            display: "flex",
-            justifyContent: "center", 
-            alignItems: "center",                         
-         }}>
+        <div style={parentstyling}>
         {tshirt.map((product)=>( 
             <div 
             key={product.id}

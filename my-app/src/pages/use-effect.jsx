@@ -16,7 +16,7 @@ const UseEffect =()=>{
 
     useEffect(()=> {
         console.log("inside useEffect")
-    },[counter, counter2]); // multiple dependency
+    },[counter, counter2]); // multiple dependencyz
 
     return(
         <div>
