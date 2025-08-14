@@ -19,7 +19,8 @@ const UseEffect =()=>{
     },[counter, counter2]); // multiple dependencyz
 
     return(
-        <div>
+        <div> 
+            <h6>useEffect</h6>
             <h1>{counter}</h1>
             <button onClick={()=> setCounter (counter +1)}>+</button>
             <h1>{counter2}</h1>

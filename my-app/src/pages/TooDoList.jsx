@@ -23,7 +23,7 @@ const TodoList = () => {
 
   return (
     <div>
-      <h2>My To-Do List</h2>
+      <h2>My To-Do List..</h2>
       <input
         type="text"
         value={input}

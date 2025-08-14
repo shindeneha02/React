@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Register.css';
+import './register.css';
 
 const Register = () => {
   const [name, setName] = useState('');
@@ -86,7 +86,7 @@ const Register = () => {
             checked={showPassword}
             onChange={() => setShowPassword(!showPassword)}
           />
-          Show Password
+          Show Password.
         </label>
 
         <input type="submit" value="Register" />

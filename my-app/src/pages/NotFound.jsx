@@ -19,7 +19,7 @@ function NotFound() {
 
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>404 - Page Not Found</h1>
+      <h1>404 - Page Not Found!</h1>
       <p>Redirecting to Home in {countdown} second{countdown !== 1 ? 's' : ''}...</p>
     </div>
   );

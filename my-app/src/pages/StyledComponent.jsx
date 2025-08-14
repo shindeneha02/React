@@ -8,7 +8,7 @@ const StyledComponent =()=>{
         color:red;`;
     return(
         <Wrapper>
-            <Title>StyledComponent</Title>
+            <Title>StyledComponent..</Title>
         </Wrapper>
     )
 }

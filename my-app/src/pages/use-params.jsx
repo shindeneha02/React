@@ -48,6 +48,7 @@ const UseParams=()=>{
                     <img style={{width : "200px",height:"250px"}} src= {product.image}/>
                 <h3>Name: {product.name}</h3>
                  <h3>Price: {product.price}/-</h3>
+                 <h6></h6>
             </div>
          ))}
          </div>

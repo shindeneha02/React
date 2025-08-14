@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/navbar";
@@ -17,10 +17,9 @@ import TooDoList from './pages/TooDoList';
 import DynamicStyles from './pages/DynamicStyles';
 import NotFound from './pages/NotFound';
 import FakeStore from './pages/FakeStore';
-import ProductList from "./pages/ProductList";
 import SingleProduct from "./pages/SingleProduct";
 import Cart from "./pages/Cart";
-import { CartProvider } from "./context/CartContext";
+import {CartProvider} from "./context/CartContext"
 
 function App() {
   const [users, setUsers] = useState(["Dhoni", "Rohit", "Virat"]);
@@ -63,8 +62,8 @@ const addToCart = (product, quantity) => {
         <Route path="/to-do-list" element={<TooDoList />} />
         <Route path="/dynamic-styles" element={<DynamicStyles />} />
         <Route path="/fakestore" element={<FakeStore />} />
-        <Route path="/products" element={<ProductList />} />
-
+       
+        
         {/* Fake Store product details */}
         <Route path="/single-product/:productId" element={<SingleProduct/>} />
 

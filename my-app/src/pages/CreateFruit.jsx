@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-const CreatFruit=()=>{
+const CreateFruit=()=>{
     const [ fruits, setFruits]=useState(["Apple","Banana","Cherry"])
     const[newFruit, setNewFruit]=useState("");
     const handleInputChange = (event) => {
@@ -30,4 +30,4 @@ const CreatFruit=()=>{
         </div>
     )
 }
-export default CreatFruit;
+export default CreateFruit;

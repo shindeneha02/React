@@ -88,7 +88,7 @@ const SingleProduct = () => {
         }}
         onClick={handleAddToCart}
       >
-        Add to Cart
+        .Add to Cart.
       </button>
     </div>
   );

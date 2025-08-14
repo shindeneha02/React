@@ -24,6 +24,7 @@ const UseState = () =>{
     }
     return(
     <div>
+        <h6></h6>
         <h2>{greeting}</h2>
         <button onClick={()=>setgreeting("welcome.")}>change greeting</button>
         <h1> Counter : {counter}</h1>
