@@ -22,6 +22,9 @@ import Cart from "./pages/Cart";
 import {CartProvider} from "./context/CartContext"
 import UseMemo from './pages/UseMemo';
 import UseCallback from './pages/UseCallback';
+import UseRef from './pages/UseRef';
+import UseReducer from "./pages/UseReducer"
+
 function App() {
   const [users, setUsers] = useState(["Dhoni", "Rohit", "Virat"]);
   const [cart, setCart] = useState([]); // ✅ cart state
@@ -73,8 +76,11 @@ const addToCart = (product, quantity) => {
 
         {/* 404 */}
         <Route path="*" element={<NotFound />} />
-         <Route path="/use-memo" element={<UseMemo />} />
-          <Route path="/use-callback" element={<UseCallback />} />
+        <Route path="/use-memo" element={<UseMemo />} />
+        <Route path="/use-callback" element={<UseCallback/>} />
+        <Route path="/use-ref" element={<UseRef/>} />
+         <Route path="/use-reducer" element={<UseReducer/>} />
+
       </Routes>
     </div>
     </CartProvider>
