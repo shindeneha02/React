@@ -31,11 +31,19 @@ import Step1 from "./pages/assignment/Step1";
 import Step2 from "./pages/assignment/Step2";
 import Step3 from "./pages/assignment/Step3";
 
+// react test 23/8/25
+import CountdownTimer from "./pages/reacttest/CountdownTimer";
+import ReverseText  from "./pages/reacttest/ReverseText"
+import ToList from "./pages/reacttest/TolList";
+import ProLi from "./pages/reacttest/ProLi";
+import WindowWidthPage from "./pages/reacttest/WindowWidthPage";
+
+
 function App() {
   const [users, setUsers] = useState(["Dhoni", "Rohit", "Virat"]);
-  const [cart, setCart] = useState([]); // ✅ cart state
+  const [cart, setCart] = useState([]); // 
 
-  // ✅ Form data state for assignment
+  // Form data state for assignment
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -45,7 +53,7 @@ function App() {
     confirmPassword: "",
   });
 
-  // ✅ Load from localStorage
+  // Load from localStorage
   useEffect(() => {
     const savedData = localStorage.getItem("formData");
     if (savedData) {
@@ -53,7 +61,7 @@ function App() {
     }
   }, []);
 
-  // ✅ Save to localStorage
+  // Save to localStorage
   useEffect(() => {
     localStorage.setItem("registrationData", JSON.stringify(formData));
   }, [formData]);
@@ -139,6 +147,14 @@ function App() {
             path="/step-3"
             element={<Step3 formData={formData} handleSubmit={handleSubmit} />}
           />
+       
+
+        {/* react test  23/8/25*/}
+         <Route path="/countdown" element={<CountdownTimer />} />
+          <Route path="/reverse" element={<ReverseText />} />
+          <Route path="/todo" element={<ToList />} />
+          <Route path="/prod" element={<ProLi />} />
+          <Route path="/window" element={<WindowWidthPage />} />
         </Routes>
       </div>
     </CartProvider>
